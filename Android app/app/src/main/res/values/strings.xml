@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WriteGlagolitic</string>
+
+    <string name="backspace">⌫</string>
+    <string name="clear">✗</string>
+    <string name="accept">✓</string>
+    <string name="space">␣</string>
+    <string name="enter">↲</string>
+
+    <string name="ije_button_text">IJE</string>
+    <string name="je_button_text">JE</string>
+</resources>

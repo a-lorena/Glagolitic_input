@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/keyboard_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/backspaceButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/yellow"
+            android:tag="backspace"
+            android:text="@string/backspace"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            app:layout_constraintBottom_toTopOf="@id/clearButton"
+            app:layout_constraintEnd_toStartOf="@id/writingView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/writingView" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/red"
+            android:tag="clear"
+            android:text="@string/clear"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/writingView"
+            app:layout_constraintEnd_toStartOf="@id/writingView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/backspaceButton" />
+
+        <com.example.writeglagolitic.WritingView
+            android:id="@+id/writingView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@id/spaceButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/scriptButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/purple"
+            android:tag="script"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/acceptButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/writingView"
+            app:layout_constraintTop_toTopOf="@id/writingView" />
+
+        <Button
+            android:id="@+id/acceptButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/green"
+            android:tag="accept"
+            android:text="@string/accept"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/writingView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/writingView"
+            app:layout_constraintTop_toBottomOf="@id/scriptButton" />
+
+        <Button
+            android:id="@+id/spaceButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:tag="space"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:text="@string/space"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/enterButton"
+            app:layout_constraintStart_toStartOf="@id/writingView"
+            app:layout_constraintTop_toBottomOf="@id/writingView" />
+
+        <Button
+            android:id="@+id/enterButton"
+            android:layout_width="70dp"
+            android:text="@string/enter"
+            android:tag="enter"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:backgroundTint="@color/blue"
+            app:layout_constraintStart_toEndOf="@id/spaceButton"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/writingView"
+            app:layout_constraintTop_toTopOf="@id/spaceButton"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

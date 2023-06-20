@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transliteration_items">
+        <item>IJE</item>
+        <item>JE</item>
+    </string-array>
+</resources>
