@@ -1,6 +1,6 @@
 ## Glagolitic input
 
-Android IME za pisanje glagoljice.
+Android IME za pisanje glagoljice. <br />
 CNN prepoznaje nacrtano slovo glagoljice te se, ovisno o postavkama, na mobilnom uređaju upisuje odgovarajuće slovo na glagoljici ili latinici.
 
 <p align="middle">
